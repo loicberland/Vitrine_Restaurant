@@ -1,5 +1,181 @@
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+html {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  font-size: pxToRem(16px);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.header {
+  text-align: center;
+  padding: 29px 10px;
+  color: #fff;
+  font-size: 0.6875rem;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.922045) 15.5%, rgba(54, 54, 54, 0.7) 39.24%, rgba(28, 28, 28, 0.5) 100%), url(/dist/img/eggs.jpg) center center/cover no-repeat;
+}
+.header-content {
+  padding: 50px 10px;
+}
+.header-content .welcome {
+  font-family: "Pinyon Script", cursive;
+  font-size: 2.8125rem;
+  color: #C89446;
+}
+.header-content .name {
+  font-weight: 900;
+  font-size: 4.0625rem;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.header-content .type {
+  padding-top: 10px;
+  font-weight: 300;
+  font-size: 0.875rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.topbar {
+  text-transform: uppercase;
+  text-align: center;
+}
+.topbar a:hover {
+  text-decoration: underline;
+}
+.topbar .logo {
+  display: block;
+  padding-bottom: 30px;
+}
+.topbar .menu-link {
+  border: solid 1px transparent;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0 16px 15px 16px;
+}
+.topbar .menu-btn {
+  padding: 5px;
+  border: #C89446 solid 1px;
+}
+.topbar .menu-btn:hover {
+  text-decoration: none;
+  color: #C89446;
+  background-color: #ffffff;
+}
+
+@media only screen and (min-width: 1070px) {
+  body .header {
+    padding-top: 18px;
+  }
+
+  .topbar {
+    font-size: 0.875rem;
+    padding: 0 133px 0 156px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .topbar .logo {
+    padding: 0;
+    margin-bottom: 12px;
+  }
+  .topbar .menu-link {
+    float: left;
+    padding: 12px 16px;
+  }
+  .topbar .menu a {
+    margin: 0px 0px 0px 0px;
+  }
+  .topbar .menu a:nth-child(1) {
+    margin: 0px -1px 0 0px;
+  }
+  .topbar .menu a:nth-child(2) {
+    margin: 0px -1px 0 0px;
+  }
+  .topbar .menu a:nth-child(3) {
+    margin: 0px 0px 0 0px;
+  }
+  .topbar .menu a:nth-child(4) {
+    margin: 0px 1px 0 0;
+  }
+  .topbar .menu a:last-child {
+    margin: 0 16px 15px 16px;
+  }
+
+  .header-content {
+    margin-top: 79px;
+    margin-bottom: 150px;
+  }
+  .header-content .welcome {
+    font-size: 3.75rem;
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+  .header-content .name {
+    font-size: 4.375rem;
+    letter-spacing: 12px;
+    margin-top: 9px;
+    margin-left: 15px;
+  }
+  .header-content .type {
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    margin-top: 8px;
+    margin-left: 3px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

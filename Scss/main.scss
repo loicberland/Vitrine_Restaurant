@@ -1,3 +1,5 @@
-*, *::before, *::after{
-    box-sizing: border-box;
-}
+@import 'libs/init';
+@import 'libs/functions';
+@import 'libs/variables';
+@import 'header';
+
