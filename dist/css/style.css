@@ -59,6 +59,11 @@ a {
   transition: all 0.3s;
 }
 
+img {
+  display: block;
+  height: auto;
+}
+
 .header {
   text-align: center;
   padding: 29px 10px;
@@ -116,6 +121,9 @@ a {
 }
 
 @media only screen and (min-width: 1070px) {
+  body {
+    background: url(/screenshot.png) no-repeat;
+  }
   body .header {
     padding-top: 18px;
   }
@@ -176,6 +184,56 @@ a {
     margin-top: 8px;
     margin-left: 3px;
   }
+}
+.container-small {
+  margin: 20px auto;
+}
+
+.card {
+  color: #6F6F6F;
+  font-size: 1rem;
+  padding: 0 15px;
+}
+.card-img {
+  border: 1px solid #c89446;
+}
+.card-tittle {
+  margin-bottom: 10px;
+  font-size: 1.75rem;
+  letter-spacing: 1.5px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.card-tittle span {
+  display: block;
+  position: relative;
+  font-size: 2.5rem;
+  color: #c89446;
+  font-family: "Pinyon Script", cursive;
+  margin-top: 15px;
+  text-transform: none;
+  font-weight: 400;
+}
+.card-tittle span::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: -10px;
+  background-color: #c89446;
+}
+.card-more {
+  display: block;
+  margin-top: 20px;
+  color: #c89446;
+}
+.card-more::after {
+  content: " >";
+  vertical-align: middle;
+}
+.card-more:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

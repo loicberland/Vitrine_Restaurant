@@ -1,0 +1,54 @@
+@import 'libs/functions';
+@import 'libs/variables';
+
+.container-small{
+    margin: 20px auto;
+}
+
+.card{
+    color: #6F6F6F;
+    font-size: pxToRem(16px);
+    padding: 0 15px;
+    &-img{
+        border: 1px solid #c89446;
+    }
+    &-tittle{
+        margin-bottom: 10px;
+        font-size: pxToRem(28px);
+        letter-spacing: 1.5px;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: bold;
+        span{
+            display: block;
+            position: relative;
+            font-size: pxToRem(40px);
+            color: #c89446;
+            font-family: 'Pinyon Script', cursive;
+            margin-top: 15px;
+            text-transform: none;
+            font-weight: 400;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 24px;
+                height: 2px;
+                top: -10px;
+                background-color: #c89446;
+            }
+        }
+    }
+    &-more{
+        display: block;
+        margin-top: 20px;
+        color: #c89446;
+        &::after{
+            content: ' >';
+            vertical-align: middle;
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+
+    }
+}
