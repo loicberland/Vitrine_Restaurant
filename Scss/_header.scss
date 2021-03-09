@@ -68,6 +68,7 @@
     body{
         background: url(/screenshot.png) no-repeat;
         .header{
+            background: none;
             padding-top: 18px;
         }
     }
@@ -79,8 +80,7 @@
         justify-content: space-between;
         align-items: center;
         .logo{
-            padding: 0;
-            margin-bottom: 12px;
+            padding-bottom: 0px;
         }
         .menu{
             &-link{
@@ -91,41 +91,37 @@
                 margin: 0px 0px 0px 0px;
             }
             a:nth-child(1){
-                margin: 0px -1px 0 0px;
+                margin: 0px -1px 0px 0px;
             }
             a:nth-child(2){
-                margin: 0px -1px 0 0px;
+                margin: 0px 0px 0px 0px;
             }
             a:nth-child(3){
-                margin: 0px 0px 0 0px;
+                margin: 0px 0px 0px 0px;
             }
             a:nth-child(4){
-                margin: 0px 1px 0 0;
+                margin: 0px 1px 0px 0px;
             }
-            a:last-child{
-                margin: 0 16px 15px 16px;
+            a:nth-child(5){
+                margin: 0px 22px 0px 13px;
             }
         }
     }
     .header-content{
-        margin-top: 79px;
-        margin-bottom: 150px;
+        padding-top: 141px;
+        padding-bottom: 204px;
         .welcome{
             font-size: pxToRem(60px);
-            margin-top: -1px;
-            margin-left: -1px;
         }
         .name{
             font-size: pxToRem(70px);
             letter-spacing: 12px;
-            margin-top: 9px;
-            margin-left: 15px;
+            margin-top: 11px;
         }
         .type{
             font-size: pxToRem(24px);
             letter-spacing: 4px;
-            margin-top: 8px;
-            margin-left: 3px;
+            margin-top: 5px;
 
         }
     }
