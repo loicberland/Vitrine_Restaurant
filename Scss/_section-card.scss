@@ -9,8 +9,14 @@
     color: #6F6F6F;
     font-size: pxToRem(16px);
     padding: 0 15px;
+    text-align: center;
+    margin-bottom: 70px;
     &-img{
+        display: inline-block;
         border: 1px solid #c89446;
+    }
+    &-body{
+        text-align: start;
     }
     &-tittle{
         margin-bottom: 10px;
@@ -55,32 +61,62 @@
     }
 }
 
-@media only screen and (min-width: 300px){
+@media only screen and (min-width: 740px){
     // section{
-        // height: 2000px; pour calquer maquette
+    //     height: 2000px; //pour calquer maquette
     // }
     .container-small{
-        margin-top: 9px;
+        margin: 9px 10px 0px 10px;
     }
     .card{
         display: flex;
+        align-items: center;
         justify-content: space-between;
         max-width: 919px;
-        margin: 0 auto;
+        margin: 0 auto 100px auto;
         padding: 0 15px 0 30px;
-        height: auto;
-        &-img{
-            transform: translate(-30px, -30px);
-            width: 350px;
-            img{
-                position: relative;
-                top: 30px;
-                left: 30px;
+        &-right{
+            .card-img{
+                order: 1;
+                transform: translate(-30px, -30px);
+                img{
+                    position: relative;
+                    top: 30px;
+                    left: 30px;
+                }
+            }
+            .card-body{
+                order: 2;
+            }
+        }
+        &-left{
+                .card-img{
+                    order: 2;
+                    transform: translate(30px, -30px);
+                    img{
+                        position: relative;
+                        bottom: -30px;
+                        left: -30px;
+                    }
+                }
+            .card-body{
+                order: 1;
+            }
+        }
+        &-middle{
+            justify-content: center;
+            .card-body{
+                text-align: center;
+                width: 640px;
+            }
+            .card-tittle span::before{
+                left: 50%;
             }
         }
         &-body{
-            max-width: 430px;
-            margin-top: 100px;
+            flex: none;
+            width: 430px;
+            margin-left: 20px;
         }
         &-tittle{
             letter-spacing: 2px;
