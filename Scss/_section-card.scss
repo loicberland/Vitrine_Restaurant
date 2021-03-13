@@ -62,9 +62,12 @@
 }
 
 @media only screen and (min-width: 740px){
-    // section{
-    //     height: 2000px; //pour calquer maquette
-    // }
+    section{
+        // height: 2000px; //pour calquer maquette
+        background: 
+        fixed top 650px left 0px url(/dist/img/cereal.jpg) no-repeat, 
+        fixed top -350px right 0px url(/dist/img/orange.jpg) no-repeat; 
+    }
     .container-small{
         margin: 9px 10px 0px 10px;
     }
