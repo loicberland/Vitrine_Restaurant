@@ -60,7 +60,7 @@ a {
 }
 
 img {
-  display: block;
+  display: inline-block;
   height: auto;
 }
 
@@ -188,7 +188,6 @@ img {
   margin-bottom: 70px;
 }
 .card-img {
-  display: inline-block;
   border: 1px solid #c89446;
 }
 .card-body {
@@ -220,6 +219,12 @@ img {
   height: 3px;
   top: -10px;
   background-color: #c89446;
+}
+.card-middle .card-body {
+  text-align: center;
+}
+.card-middle .card-tittle span::before {
+  left: 50%;
 }
 .card-more {
   display: block;
@@ -280,11 +285,7 @@ img {
     justify-content: center;
   }
   .card-middle .card-body {
-    text-align: center;
     width: 640px;
-  }
-  .card-middle .card-tittle span::before {
-    left: 50%;
   }
   .card-body {
     flex: none;
@@ -309,6 +310,72 @@ img {
   .card-more {
     margin-top: 31px;
   }
+}
+.section-menu {
+  color: #383838;
+}
+
+.food-type-list {
+  max-width: 563px;
+  margin: 64px auto 34px auto;
+  text-align: center;
+}
+.food-type-list .food-type-link {
+  position: relative;
+  display: inline-block;
+  margin: 0 32.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.food-type-list .food-type-link:hover::before, .food-type-list .food-type-link:active::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #C89446;
+  bottom: 0px;
+  transform: translateY(125%);
+}
+
+.container-large {
+  margin: 80px 20px;
+  max-width: 1187px;
+}
+
+.menu-card {
+  text-align: center;
+  max-width: 553px;
+}
+.menu-card-tittle {
+  margin-top: 15px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.menu-card-body {
+  text-align: start;
+}
+.menu-card-body p {
+  margin-top: 9px;
+  margin-bottom: 16px;
+  color: #6f6f6f;
+}
+.menu-card-price {
+  font-family: "Pinyon Script", cursive;
+  font-size: 2.5rem;
+  color: #C89446;
+  position: relative;
+  margin-left: 20px;
+}
+.menu-card-price::before {
+  content: " $ ";
+  display: inline-block;
+  position: absolute;
+  transform: translateX(-20px);
+  left: 0;
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,7 +12,6 @@
     text-align: center;
     margin-bottom: 70px;
     &-img{
-        display: inline-block;
         border: 1px solid #c89446;
     }
     &-body{
@@ -43,6 +42,14 @@
                 top: -10px;
                 background-color: #c89446;
             }
+        }
+    }
+    &-middle{
+        .card-body{
+            text-align: center;
+        }
+        .card-tittle span::before{
+            left: 50%;
         }
     }
     &-more{
@@ -109,11 +116,7 @@
         &-middle{
             justify-content: center;
             .card-body{
-                text-align: center;
                 width: 640px;
-            }
-            .card-tittle span::before{
-                left: 50%;
             }
         }
         &-body{
