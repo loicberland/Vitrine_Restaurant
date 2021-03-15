@@ -257,28 +257,28 @@ img {
     margin: 0 auto 100px auto;
     padding: 0 15px 0 30px;
   }
-  .card-right .card-img {
+  .card-left .card-img {
     order: 1;
     transform: translate(-30px, -30px);
   }
-  .card-right .card-img img {
+  .card-left .card-img img {
     position: relative;
     top: 30px;
     left: 30px;
   }
-  .card-right .card-body {
+  .card-left .card-body {
     order: 2;
   }
-  .card-left .card-img {
+  .card-right .card-img {
     order: 2;
     transform: translate(30px, -30px);
   }
-  .card-left .card-img img {
+  .card-right .card-img img {
     position: relative;
     bottom: -30px;
     left: -30px;
   }
-  .card-left .card-body {
+  .card-right .card-body {
     order: 1;
   }
   .card-middle {
@@ -316,7 +316,7 @@ img {
 }
 
 .food-type-list {
-  max-width: 563px;
+  max-width: 919px;
   margin: 64px auto 34px auto;
   text-align: center;
 }
@@ -329,7 +329,7 @@ img {
   letter-spacing: 1px;
   margin-bottom: 8px;
 }
-.food-type-list .food-type-link:hover::before, .food-type-list .food-type-link:active::before {
+.food-type-list .food-type-link:hover::before, .food-type-list .food-type-link.active::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -376,6 +376,22 @@ img {
   transform: translateX(-20px);
   left: 0;
   vertical-align: middle;
+}
+
+@media only screen and (min-width: 400px) {
+  .food-type-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-large {
+    margin: 80px 138px 80px 115px;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

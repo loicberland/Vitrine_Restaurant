@@ -85,7 +85,7 @@
         max-width: 919px;
         margin: 0 auto 100px auto;
         padding: 0 15px 0 30px;
-        &-right{
+        &-left{
             .card-img{
                 order: 1;
                 transform: translate(-30px, -30px);
@@ -99,7 +99,7 @@
                 order: 2;
             }
         }
-        &-left{
+        &-right{
                 .card-img{
                     order: 2;
                     transform: translate(30px, -30px);

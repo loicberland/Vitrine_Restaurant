@@ -6,7 +6,7 @@
 
 }
 .food-type-list{
-    max-width: 563px;
+    max-width: 919px;
     margin: 64px auto 34px auto;
     text-align: center;
     .food-type-link{
@@ -17,7 +17,7 @@
         font-weight: 600;
         letter-spacing: 1px;
         margin-bottom: 8px;
-        &:hover, &:active{
+        &:hover, &.active{
             &::before{
                 position: absolute;
                 content: '';
@@ -70,5 +70,22 @@
             vertical-align: middle;
         }
 
+    }
+}
+
+@media only screen and (min-width:400px){
+    .food-type-list{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container-large{
+        margin: 80px 138px 80px 115px;
+    }
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        &-card{
+        }
     }
 }
