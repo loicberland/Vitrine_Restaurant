@@ -3,6 +3,8 @@
 
 .section-menu{
     color: #383838;
+    border: solid 2px #C89446;
+    margin: 2px;
 
 }
 .food-type-list{
@@ -12,7 +14,8 @@
     .food-type-link{
         position: relative;
         display: inline-block;
-        margin: 0 32.5px;
+        // margin: 0 32.5px;
+        margin: 0 5px;
         text-transform: uppercase;
         font-weight: 600;
         letter-spacing: 1px;
@@ -40,22 +43,29 @@
 .menu-card{
     text-align: center;
     max-width: 553px;
+    margin-bottom: 20px;
+    &-img{
+        width: 160px;
+        height: 160px;
+    }
     &-tittle{
-        margin-top: 15px;
+        margin-top: 8px;
         font-size: pxToRem(18px);
         font-weight: bold;
         letter-spacing: 1px;
     }
     &-body{
-        // margin-left: 32px;
+        display: flex;
+        flex-direction: column;
         text-align: start;
         p{
             margin-top: 9px;
-            margin-bottom: 16px;
+            margin-bottom: 8px;
             color: #6f6f6f;
         }
     }
     &-price{
+        align-self: flex-end;
         font-family: 'Pinyon Script', cursive;
         font-size: pxToRem(40px);
         color: #C89446;
@@ -80,12 +90,35 @@
     }
     
     .container-large{
-        margin: 80px 138px 80px 115px;
+        margin: 80px 115px;
     }
     .menu{
+        justify-content: space-between;
         display: flex;
         flex-wrap: wrap;
-        &-card{
+    }
+    .menu-card{
+        width: 553px;
+        height: 160px;
+        text-align: start;
+        display: flex;
+        margin: 10px 0px;
+        &-body{
+            justify-content: center;
+            width: 297px;
+            margin-left: 32px;
+            p{
+                margin-bottom: 16px;
+                line-height: 24px;
+            }
+        }
+        &-tittle{
+            margin-bottom: 8px;
+        }
+        &-price{
+            align-self: flex-start;
+        }
+        &-img{
         }
     }
 }
