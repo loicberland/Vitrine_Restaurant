@@ -71,9 +71,9 @@
 @media only screen and (min-width: 740px){
     main{
         // height: 2000px; //pour calquer maquette
-        // background: 
-        // fixed top 550px left 0px url(/dist/img/cereal.jpg) no-repeat, 
-        // fixed top -350px right 0px url(/dist/img/orange.jpg) no-repeat; 
+        background: 
+        fixed top 550px left 0px url(/dist/img/cereal.jpg) no-repeat, 
+        fixed top -350px right 0px url(/dist/img/orange.jpg) no-repeat; 
     }
     .container-small{
         margin: 9px 10px 0px 10px;
@@ -115,6 +115,7 @@
         }
         &-middle{
             justify-content: center;
+            margin-bottom: 0px ;
             .card-body{
                 width: 640px;
             }

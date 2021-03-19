@@ -121,9 +121,6 @@ img {
 }
 
 @media only screen and (min-width: 1070px) {
-  body {
-    background: url(/screenshot.png) no-repeat;
-  }
   body .header {
     padding-top: 18px;
   }
@@ -244,6 +241,10 @@ img {
 }
 
 @media only screen and (min-width: 740px) {
+  main {
+    background: fixed top 550px left 0px url(/dist/img/cereal.jpg) no-repeat, fixed top -350px right 0px url(/dist/img/orange.jpg) no-repeat;
+  }
+
   .container-small {
     margin: 9px 10px 0px 10px;
   }
@@ -282,6 +283,7 @@ img {
   }
   .card-middle {
     justify-content: center;
+    margin-bottom: 0px;
   }
   .card-middle .card-body {
     width: 640px;
@@ -312,7 +314,6 @@ img {
 }
 .section-menu {
   color: #383838;
-  border: solid 2px #C89446;
   margin: 2px;
 }
 
@@ -341,14 +342,14 @@ img {
 }
 
 .container-large {
-  margin: 80px 20px;
+  margin: 80px auto;
   max-width: 1187px;
 }
 
 .menu-card {
   text-align: center;
   max-width: 553px;
-  margin-bottom: 20px;
+  margin: 0px auto 20px auto;
 }
 .menu-card-img {
   width: 160px;
@@ -363,7 +364,6 @@ img {
 .menu-card-body {
   display: flex;
   flex-direction: column;
-  text-align: start;
 }
 .menu-card-body p {
   margin-top: 9px;
@@ -371,7 +371,7 @@ img {
   color: #6f6f6f;
 }
 .menu-card-price {
-  align-self: flex-end;
+  align-self: center;
   font-family: "Pinyon Script", cursive;
   font-size: 2.5rem;
   color: #C89446;
@@ -387,43 +387,83 @@ img {
   vertical-align: middle;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 1330px) {
+  .section-menu {
+    border: none;
+  }
+
   .food-type-list {
     display: flex;
     justify-content: center;
   }
+  .food-type-list .food-type-link {
+    margin: 0 32.5px;
+  }
 
   .container-large {
-    margin: 80px 115px;
+    margin: 120px auto;
+    padding: 0px 10px;
   }
 
   .menu {
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+  }
+  .menu::before {
+    content: "";
+    position: absolute;
+    display: block;
+    border: solid 1px #C89446;
+    width: 425px;
+    height: 425px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
   }
 
   .menu-card {
     width: 553px;
-    height: 160px;
+    height: 165px;
     text-align: start;
     display: flex;
-    margin: 10px 0px;
+    margin-bottom: 110px;
   }
   .menu-card-body {
     justify-content: center;
-    width: 297px;
     margin-left: 32px;
   }
   .menu-card-body p {
-    margin-bottom: 16px;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 18px;
     line-height: 24px;
+    background-color: #fff;
   }
   .menu-card-tittle {
-    margin-bottom: 8px;
+    margin: 0;
+    background-color: #fff;
   }
   .menu-card-price {
     align-self: flex-start;
+  }
+  .menu-card-img {
+    margin: auto 0px;
+  }
+
+  .menu-card-right .menu-card-img {
+    order: 2;
+  }
+  .menu-card-right .menu-card-body {
+    text-align: end;
+    order: 1;
+    margin-right: 32px;
+    margin-left: 0px;
+  }
+  .menu-card-right .menu-card-price {
+    align-self: flex-end;
   }
 }
 
