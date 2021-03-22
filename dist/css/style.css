@@ -242,7 +242,7 @@ img {
 
 @media only screen and (min-width: 740px) {
   main {
-    background: fixed top 550px left 0px url(/dist/img/cereal.jpg) no-repeat, fixed top -350px right 0px url(/dist/img/orange.jpg) no-repeat;
+    background: top 550px left 0px url(/dist/img/cereal.jpg) no-repeat, top -350px right 0px url(/dist/img/orange.jpg) no-repeat;
   }
 
   .container-small {
@@ -464,6 +464,47 @@ img {
   }
   .menu-card-right .menu-card-price {
     align-self: flex-end;
+  }
+}
+.section-chef .card {
+  max-width: 1122px;
+}
+.section-chef .card-img {
+  border: none;
+}
+.section-chef .card-tittle {
+  line-height: 1.2;
+}
+
+@media only screen and (min-width: 455px) {
+  .section-chef .card {
+    margin-bottom: 0px;
+  }
+  .section-chef .card-img {
+    display: inline-block;
+    position: relative;
+    width: 395px;
+  }
+  .section-chef .card-img .img {
+    flex: auto;
+    width: 395px;
+    height: 544px;
+    background: url(/dist/img/chef.jpg) center center/cover no-repeat;
+    filter: grayscale(1);
+    opacity: 0.25;
+  }
+  .section-chef .card-img .signature {
+    width: 181px;
+    height: 111px;
+    left: -35px;
+    top: 370px;
+    position: absolute;
+    background: url(/dist/img/Bitmap.png) center center/cover no-repeat;
+  }
+  .section-chef .card-body {
+    max-width: 716px;
+    width: auto;
+    flex: auto;
   }
 }
 

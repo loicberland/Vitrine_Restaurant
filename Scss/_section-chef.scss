@@ -1,0 +1,48 @@
+@import 'libs/functions';
+@import 'libs/variables';
+
+.section-chef{
+    .card{
+        max-width: 1122px;
+        &-img{
+            border: none;
+        }
+        &-tittle{
+            line-height: 1.2;
+        }
+    }
+}
+
+@media only screen and (min-width: 455px){
+    .section-chef{
+        .card{
+            margin-bottom: 0px;
+            &-img{
+                display: inline-block;
+                position: relative;
+                width: 395px;
+                .img{
+                    flex: auto;
+                    width: 395px;
+                    height: 544px;
+                    background: url(/dist/img/chef.jpg) center center / cover no-repeat;
+                    filter: grayscale(1);
+                    opacity: .25;
+                }
+                .signature{
+                    width: 181px;
+                    height: 111px;
+                    left: -35px;
+                    top: 370px;
+                    position: absolute;
+                    background: url(/dist/img/Bitmap.png) center center / cover no-repeat;
+                }
+            }
+            &-body{
+                max-width: 716px;
+                width: auto;
+                flex: auto;
+            }
+        }
+    }
+}
