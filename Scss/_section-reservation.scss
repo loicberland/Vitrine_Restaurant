@@ -1,0 +1,18 @@
+@import 'libs/functions';
+@import 'libs/variables';
+
+.section-resa{
+    height: 300px;
+    padding-top: 10px;
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0.922045) 15.5%, rgba(54, 54, 54, 0.7) 39.24%, rgba(28, 28, 28, 0.5) 100%),
+        url(/dist/img/Salle.jpg) center center / cover no-repeat;
+    .card{
+        &-tittle{
+            color: #fff;
+        }
+    }
+
+}
+
+
