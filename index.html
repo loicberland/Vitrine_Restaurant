@@ -145,20 +145,22 @@
                         </p>
                     </div>
                 </div>
-                <div class="resa-form">
+                <div class="form">
                     <label for="name"></label>
-                    <input type="text" name="name" id="name" placeholder="FULL NAME (FOCUS)">
+                    <input class="form-style"  type="text" name="name" id="name" placeholder="FULL NAME (FOCUS)">
                     <label for="persons"></label>
-                    <select name="persons" id="persons">
-                        <option value="1">For 1 person</option>
-                        <option value="2">For 2 persons</option>
-                        <option value="3">For 3 persons</option>
-                        <option value="4">For 4 persons</option>
-                        <option value="5">For 5 persons</option>
-                    </select>
+                    <div class="select">
+                        <select class="form-style" name="persons" id="persons">
+                            <option value="1">For 1 person</option>
+                            <option value="2">For 2 persons</option>
+                            <option value="3">For 3 persons</option>
+                            <option value="4">For 4 persons</option>
+                            <option value="5">For 5 persons</option>
+                        </select>
+                    </div>
                     <label for="date"></label>
-                    <input type="date" name="date" id="date">
-                    <label for="time"></label>
+                    <input class="form-style" type="date" name="date" id="date">
+                    <!-- <label for="time"></label>
                     <select name="time" id="time">
                         <option value="11h30">11h30</option>
                         <option value="12h00">11h00</option>
@@ -171,8 +173,8 @@
                         <option value="21h00">21h00</option>
                         <option value="21h30">21h30</option>
                         <option value="22h00">22h00</option>
-                    </select>
-                    <input type="submit" value="submit">
+                    </select> -->
+                    <input class="form-style form-btn" type="submit" value="reserve table">
                 </div>
             </div>
         </section>

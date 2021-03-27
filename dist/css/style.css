@@ -508,12 +508,61 @@ img {
   }
 }
 .section-resa {
-  height: 300px;
+  height: auto;
   padding-top: 10px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.922045) 15.5%, rgba(54, 54, 54, 0.7) 39.24%, rgba(28, 28, 28, 0.5) 100%), url(/dist/img/Salle.jpg) center center/cover no-repeat;
 }
+.section-resa .card {
+  margin-bottom: 10px;
+}
 .section-resa .card-tittle {
   color: #fff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form input[type=text] {
+  border-color: #C89446;
+}
+.form .select {
+  display: inline-block;
+}
+.form .select select {
+  appearance: none;
+  background-color: transparent;
+}
+.form-style {
+  margin: 10px;
+  padding: 11px 0px 11px 16px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px solid #6F6F6F;
+  background-color: transparent;
+  width: 255px;
+  height: 40px;
+  border-radius: 2px;
+}
+.form-style::placeholder {
+  text-transform: inherit;
+  color: inherit;
+  opacity: 1;
+}
+.form-style:hover {
+  border-color: #C89446;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.form-btn {
+  padding: 0;
+  border: #C89446 solid 1px;
+  background-color: #C89446;
+}
+.form-btn:hover {
+  border: #ffffff solid 1px;
+  text-decoration: none;
+  color: #C89446;
 }
 
 /*# sourceMappingURL=style.css.map */
