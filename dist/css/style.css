@@ -466,6 +466,9 @@ img {
     align-self: flex-end;
   }
 }
+.section-chef .container-large {
+  margin-bottom: 0px;
+}
 .section-chef .card {
   max-width: 1122px;
 }
@@ -508,7 +511,7 @@ img {
   }
 }
 .section-resa {
-  height: auto;
+  height: 600px;
   padding-top: 10px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.922045) 15.5%, rgba(54, 54, 54, 0.7) 39.24%, rgba(28, 28, 28, 0.5) 100%), url(/dist/img/Salle.jpg) center center/cover no-repeat;
 }
@@ -527,12 +530,15 @@ img {
 .form input[type=text] {
   border-color: #C89446;
 }
-.form .select {
-  display: inline-block;
-}
-.form .select select {
+.form select {
   appearance: none;
   background-color: transparent;
+  background-image: url(/dist/img/valid.svg);
+  background-repeat: no-repeat;
+  background-position: right 5% center;
+}
+.form select option {
+  color: #000;
 }
 .form-style {
   margin: 10px;
@@ -544,13 +550,14 @@ img {
   width: 255px;
   height: 40px;
   border-radius: 2px;
+  transition: background 0.3s;
 }
 .form-style::placeholder {
   text-transform: inherit;
   color: inherit;
   opacity: 1;
 }
-.form-style:hover {
+.form-style:hover, .form-style:focus {
   border-color: #C89446;
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -560,9 +567,33 @@ img {
   background-color: #C89446;
 }
 .form-btn:hover {
-  border: #ffffff solid 1px;
+  border: #C89446 solid 1px;
   text-decoration: none;
-  color: #C89446;
+  color: #FFF;
+}
+
+@media only screen and (min-width: 600px) {
+  .section-resa .container-small {
+    max-width: 885px;
+    margin: 95px auto;
+  }
+  .section-resa .form {
+    margin-left: 30px;
+    margin-top: 65px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section-resa .form-style {
+    margin-right: 15px;
+    margin-left: 15px;
+    min-width: 255px;
+  }
+}
+@media only screen and (min-width: 885px) {
+  .section-resa .form-btn {
+    margin-top: 43px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

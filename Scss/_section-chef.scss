@@ -2,6 +2,9 @@
 @import 'libs/variables';
 
 .section-chef{
+    .container-large{
+        margin-bottom: 0px;
+    }
     .card{
         max-width: 1122px;
         &-img{
