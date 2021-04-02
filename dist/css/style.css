@@ -595,5 +595,83 @@ img {
     margin-top: 43px;
   }
 }
+.section-recipes {
+  margin-top: 80px;
+}
+.section-recipes .card {
+  margin-bottom: 64px;
+}
+
+.container-recipes .card-more {
+  float: right;
+  margin-right: 20px;
+}
+
+.article {
+  color: #6f6f6f9c;
+}
+.article-description {
+  line-height: 1.7;
+  margin: 10px 0px;
+}
+.article-date {
+  width: 33px;
+  margin-right: 5px;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+.article-date span {
+  color: #000;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 500px) {
+  .container-recipes {
+    max-width: 926px;
+    height: 612px;
+    margin: 80px auto 0 auto;
+    padding: 0px 20px;
+  }
+
+  .section-recipes {
+    margin-top: 0px;
+    min-height: 775px;
+    background: top 0px left 0px url(/dist/img/carrote.png) no-repeat;
+  }
+  .section-recipes .card {
+    max-width: 720px;
+    padding: 20px 0 0 0;
+  }
+  .section-recipes .card-right {
+    margin: 0px 0px 64px auto;
+    justify-content: end;
+  }
+  .section-recipes .card-right .card-body {
+    width: 100%;
+    text-align: end;
+  }
+  .section-recipes .card-right .card-body .card-tittle span::before {
+    right: 0;
+  }
+
+  .article {
+    display: flex;
+    margin-bottom: 60px;
+  }
+  .article-date {
+    align-self: center;
+    margin-right: 61px;
+  }
+  .article-description {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .container-recipes {
+    float: right;
+    margin-right: 161px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
