@@ -1,0 +1,51 @@
+@import 'libs/functions';
+@import 'libs/variables';
+
+.section-map{
+    position: relative;
+    clear: both;
+    .img{
+        height: 300px;
+        background: url(/dist/img/map.png) top left -150px / cover no-repeat;
+    }
+    .container-bandeau{
+        display: inline-block;
+        position: absolute;
+        top: 65%;
+        left: 35%;
+        transform: translateY(-50%);
+        .bandeau{
+            width: 210px;
+            background-color: #C99649;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: #fff;
+            text-align: center;
+            border-radius: 2px;
+            font-size: pxToRem(14px);
+            line-height: 20px;
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                left: -12px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 0;
+                height: 0;
+                border-top: 7px solid transparent;
+                border-right: 12px solid #C99649;
+                border-bottom: 7px solid transparent;
+            }
+            .bulle{
+                margin: 10px;
+            }
+            .name{
+                font-size: pxToRem(16px);
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
+}
